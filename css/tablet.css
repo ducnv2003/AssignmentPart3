@@ -1,0 +1,105 @@
+/* Tablet*/
+
+@media only screen and(min-width:768px) and(max-width:991px) {
+    .column {
+        width: calc(50.33% - 50px);
+        margin: 0px 10px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    
+    .column-item {
+        width: 50%;
+        border: 1px solid #d0d0d0;
+        box-shadow: 1px 1px 5px #d0d0d0;
+        padding: 20px 0;
+        margin: 20px 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .column-item h1 {
+        width: 75%;
+        padding: 0 40px;
+    }
+    
+    .column-item i {
+        width: 25%;
+        text-align: center;
+        font-size: 36px;
+        color: gray;
+    }
+    
+    .time-line h5 {
+        font-style: italic;
+        font-weight: unset;
+        padding: 10px 0px;
+        color: gray;
+    }
+    
+    .recent {
+        background-color: #199cdb;
+        color: white;
+        border-radius: 5px;
+        padding: 2px 10px;
+    }
+    
+    .work-detail {
+        padding: 40px 20px 0px 40px;
+        width: 100%;
+    }
+    
+    /* line-height khoảng cách các văn bản*/
+    
+    .work-content h5 {
+        line-height: 1.8;
+        font-weight: unset;
+        color: gray;
+    }
+    
+    .name-work {
+        position: relative;
+    }
+    
+    /*before thêm vào trước tạo hiệu ứng trc title*/
+    .name-work::before {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: #199cdb;
+        border-radius: 50%;
+        left: -20px;
+        top: 5px;
+    }
+    
+    .column-item .hobby {
+        padding: 25px;
+        display: flex;
+    }
+    
+    .hobby-content h5 {
+        line-height: 1.5;
+        font-size: 9px;
+        font-weight: unset;
+        color: gray;
+        margin-left: 32px
+    }
+    
+    /*position relative đặt phần tử ở 1 vị trí và không gian xung quanh sẽ giữ nguyên*/
+    
+    .hobby {
+        border: 1px solid rgb(54, 236, 245);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        align-items: center;
+        text-align: center;
+        margin-left: 23px;
+        position: relative;
+    
+    }
+    
+}
